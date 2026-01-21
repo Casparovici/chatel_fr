@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Vacances - Holiday Home in France</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Maison Provence</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Photos</a></li>
+                <li><a href="#rates">Rates</a></li>
+                <li><a href="#calendar">Availability</a></li>
+                <li><a href="#contact" class="btn-nav">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Escape to the French Countryside</h1>
+                <p>Experience the tranquility of Dordogne in our charming 19th-century renovated barn. Situated in the picturesque village of Saint-Geniès, our home offers the perfect blend of rustic history and modern luxury.</p>
+                <a href="#gallery" class="btn-main">View the House</a>
+            </div>
+            <div class="hero-image">
+                
+                <img src="https://placehold.co/600x400/EEE/31343C?text=Main+House+Photo" alt="Exterior of the holiday home in France">
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-pad">
+        <div class="container">
+            <h2 class="section-title">The Property</h2>
+            <div class="gallery-grid">
+                <img src="https://placehold.co/400x300/EEE/31343C?text=Living+Room" alt="Living Room">
+                <img src="https://placehold.co/400x300/EEE/31343C?text=Kitchen" alt="Kitchen">
+                <img src="https://placehold.co/400x300/EEE/31343C?text=Master+Bedroom" alt="Master Bedroom">
+                <img src="https://placehold.co/400x300/EEE/31343C?text=Garden+View" alt="Garden">
+                <img src="https://placehold.co/400x300/EEE/31343C?text=Pool" alt="Pool Area">
+                <img src="https://placehold.co/400x300/EEE/31343C?text=Bathroom" alt="Bathroom">
+            </div>
+        </div>
+    </section>
+
+    <section id="rates" class="section-pad bg-light">
+        <div class="container">
+            <h2 class="section-title">Weekly Rates</h2>
+            <p class="text-center">Rentals run from Saturday to Saturday.</p>
+            <div class="rate-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Season</th>
+                            <th>Period</th>
+                            <th>Price per Week</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Low Season</td>
+                            <td>Oct - Apr</td>
+                            <td>€750</td>
+                        </tr>
+                        <tr>
+                            <td>Mid Season</td>
+                            <td>May - Jun / Sep</td>
+                            <td>€1,100</td>
+                        </tr>
+                        <tr>
+                            <td>High Season</td>
+                            <td>Jul - Aug</td>
+                            <td>€1,600</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-small">* Includes cleaning fee and linens. Tourist tax not included.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calendar" class="section-pad">
+        <div class="container">
+            <h2 class="section-title">Availability</h2>
+            <p class="text-center">Check the calendar below to see if your preferred dates are free.</p>
+            
+            <div class="calendar-wrapper">
+                <div class="calendar-placeholder">
+                    <p>Interactive Calendar Loading...</p>
+                    <p class="note">(In production, paste your Google Calendar Embed Code here)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-pad bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Contact Us</h2>
+            <p class="text-center text-white">Ready to book or have a question? Send us a message.</p>
+            
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="dates">Desired Dates</label>
+                    <input type="text" id="dates" name="dates" placeholder="e.g., July 12 - July 19">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-main full-width">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Maison Provence. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
