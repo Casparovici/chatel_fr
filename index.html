@@ -12,6 +12,13 @@
     <nav class="navbar">
         <div class="container">
             <a href="#home" class="logo">Maison Chatel-Montagne</a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#gallery">Foto's</a></li>
@@ -41,24 +48,24 @@
         <div class="container">
             <h2 class="section-title">Het huis</h2>
             <div class="gallery-grid">
-                <img src="img/huis_voorkant_3.jpg" alt="Living Room">
-                <img src="img/woonkamer_1.jpg" alt="Kitchen">
-                <img src="img/woonkamer_2.jpg" alt="Master Bedroom">
-                <img src="img/terras.jpg" alt="Garden">
-                <img src="img/terras_2.jpg" alt="Pool Area">
-                <img src="img/huis_voorkant2.jpg" alt="Bathroom">
+                <img src="img/huis_voorkant_3.webp" alt="Living Room" loading="lazy">
+                <img src="img/woonkamer_1.webp" alt="Kitchen" loading="lazy">
+                <img src="img/woonkamer_2.webp" alt="Master Bedroom" loading="lazy">
+                <img src="img/terras.webp" alt="Garden" loading="lazy">
+                <img src="img/terras_2.webp" alt="Pool Area" loading="lazy">
+                <img src="img/huis_voorkant2.webp" alt="Bathroom" loading="lazy">
             </div>
             <h2 class="section-title">De omgeving</h2>
             <p>
                 Ons vakantiehuis (zie blauw pijltje op de foto hieronder) ligt aan de rand van het dorpje Châtel-Montagne (ca. 300 inwoners) tussen la Montagne Bourbonnaise en de Monts de Madeleine (Auvergne): een prachtig heuvellandschap met veel verrassende doorkijkjes. Dat is te danken aan de sterk glooiende hellingen, waarop bossen, weiden, beekjes, buurtschappen, dorpjes en stadjes elkaar afwisselen. Je raakt er niet op uitgekeken!
             </p>
             <div class="gallery-grid">
-                <img src="img/omgeving_1.jpg" alt="Omgeving 1">
-                <img src="img/omgeving_2.jpg" alt="Omgeving 2">
-                <img src="img/omgeving_3.jpg" alt="Omgeving 3">
-                <img src="img/omgeving_4.jpg" alt="Omgeving 4">
-                <img src="img/omgeving_5.jpg" alt="Omgeving 5">
-                <img src="img/omgeving_6.jpg" alt="Omgeving 6">
+                <img src="img/omgeving_1.webp" alt="Omgeving 1" loading="lazy">
+                <img src="img/omgeving_2.webp" alt="Omgeving 2" loading="lazy">
+                <img src="img/omgeving_3.webp" alt="Omgeving 3" loading="lazy">
+                <img src="img/omgeving_4.webp" alt="Omgeving 4" loading="lazy">
+                <img src="img/omgeving_5.webp" alt="Omgeving 5" loading="lazy">
+                <img src="img/omgeving_6.webp" alt="Omgeving 6" loading="lazy">
             </div>
         </div>
     </section>
@@ -163,6 +170,21 @@
         <p>&copy; 2026 Maison Chatel-Montage.</p>
     </footer>
 
+    <script>
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-links');
+
+    menu.addEventListener('click', function() {
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    });
+
+    // Sluit het menu als je op een link klikt
+    document.querySelectorAll('.nav-links a').forEach(n => n.addEventListener('click', () => {
+        menu.classList.remove('is-active');
+        menuLinks.classList.remove('active');
+    }));
+    </script>
 </body>
 
 </html>
